@@ -2,56 +2,346 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Mi Página Web</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consultoría Veterinaria Ganadera</title>
 
-  <style>
+<style>
 
-    body{
-      margin:0;
-      font-family:Arial;
-      background:#f2f2f2;
-      text-align:center;
-    }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-    header{
-      background:#0077ff;
-      color:white;
-      padding:30px;
-    }
+body{
+  font-family:Arial, sans-serif;
+  background:#f4f4f4;
+  color:#333;
+  line-height:1.6;
+}
 
-    .contenedor{
-      margin-top:40px;
-    }
+header{
+  background:#1f5f3b;
+  color:white;
+  text-align:center;
+  padding:60px 20px;
+}
 
-    img{
-      width:350px;
-      border-radius:20px;
-    }
+header h1{
+  font-size:50px;
+}
 
-    p{
-      font-size:20px;
-    }
+header p{
+  margin-top:15px;
+  font-size:20px;
+}
 
-  </style>
+nav{
+  background:#144228;
+  padding:15px;
+  text-align:center;
+}
 
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 15px;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:#d4ffd4;
+}
+
+section{
+  padding:50px 10%;
+}
+
+h2{
+  color:#1f5f3b;
+  margin-bottom:20px;
+  font-size:35px;
+}
+
+.card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  margin-bottom:30px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  gap:20px;
+}
+
+.paquete{
+  background:white;
+  padding:25px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.paquete h3{
+  color:#1f5f3b;
+  margin-bottom:15px;
+}
+
+.precio{
+  font-size:35px;
+  color:#0a7a39;
+  margin:15px 0;
+  font-weight:bold;
+}
+
+img{
+  width:100%;
+  border-radius:15px;
+}
+
+.galeria{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+  gap:20px;
+}
+
+footer{
+  background:#1f5f3b;
+  color:white;
+  text-align:center;
+  padding:30px;
+  margin-top:40px;
+}
+
+ul{
+  margin-left:20px;
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>Bienvenido a mi página web</h1>
+  <h1>Consultoría Veterinaria Ganadera</h1>
+  <p>Asesoría integral para el bienestar y productividad bovina</p>
 </header>
 
-<div class="contenedor">
+<nav>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#mision">Misión</a>
+  <a href="#vision">Visión</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#equipo">Equipo</a>
+  <a href="#galeria">Galería</a>
+</nav>
 
-  <img src="https://picsum.photos/600/300">
+<section id="nosotros">
+
+<div class="card">
+  <h2>¿Quiénes Somos?</h2>
 
   <p>
-    Esta página fue creada gratis con GitHub Pages.
+    Somos una empresa de consultoría veterinaria enfocada en el sector ganadero.
+    Brindamos acompañamiento técnico y profesional a fincas y productores bovinos,
+    con el objetivo de mejorar la salud animal, la productividad y el manejo integral del ganado.
+  </p>
+</div>
+
+</section>
+
+<section id="mision">
+
+<div class="card">
+  <h2>Misión</h2>
+
+  <p>
+    Proporcionar asesoría veterinaria especializada al sector ganadero mediante estrategias técnicas,
+    innovadoras y sostenibles que permitan optimizar la producción y garantizar el bienestar animal.
+  </p>
+</div>
+
+</section>
+
+<section id="vision">
+
+<div class="card">
+  <h2>Visión</h2>
+
+  <p>
+    Ser una empresa líder en consultoría veterinaria ganadera reconocida por su excelencia profesional,
+    compromiso con el campo y aporte al desarrollo sostenible del sector pecuario.
+  </p>
+</div>
+
+</section>
+
+<section id="servicios">
+
+<h2>Paquetes de Asesoría</h2>
+
+<div class="grid">
+
+<div class="paquete">
+  <h3>Plan Básico</h3>
+
+  <p class="precio">$300.000</p>
+
+  <ul>
+    <li>Visita técnica mensual</li>
+    <li>Evaluación sanitaria</li>
+    <li>Recomendaciones básicas</li>
+  </ul>
+</div>
+
+<div class="paquete">
+  <h3>Plan Profesional</h3>
+
+  <p class="precio">$650.000</p>
+
+  <ul>
+    <li>2 visitas mensuales</li>
+    <li>Control nutricional</li>
+    <li>Seguimiento veterinario</li>
+    <li>Capacitación al personal</li>
+  </ul>
+</div>
+
+<div class="paquete">
+  <h3>Plan Premium</h3>
+
+  <p class="precio">$1.200.000</p>
+
+  <ul>
+    <li>Asistencia integral</li>
+    <li>Monitoreo constante</li>
+    <li>Plan sanitario completo</li>
+    <li>Diagnóstico productivo</li>
+  </ul>
+</div>
+
+</div>
+
+</section>
+
+<section id="equipo">
+
+<div class="card">
+  <h2>Nuestro Equipo</h2>
+
+  <div class="grid">
+
+    <div>
+      <h3>Gerente General</h3>
+      <p>Encargado de la dirección y toma de decisiones estratégicas.</p>
+    </div>
+
+    <div>
+      <h3>Médico Veterinario</h3>
+      <p>Responsable del diagnóstico, tratamiento y bienestar animal.</p>
+    </div>
+
+    <div>
+      <h3>Coordinador de Campo</h3>
+      <p>Supervisa las visitas técnicas y el manejo operativo.</p>
+    </div>
+
+    <div>
+      <h3>Asistente Administrativo</h3>
+      <p>Gestiona documentación, agenda y atención al cliente.</p>
+    </div>
+
+  </div>
+
+</div>
+
+</section>
+
+<section id="galeria">
+
+<h2>Galería de Visitas y Actividades</h2>
+
+<div class="galeria">
+
+  <img src="foto1.jpg" alt="Visita a finca">
+
+  <img src="foto2.jpg" alt="Revisión veterinaria">
+
+  <img src="foto3.jpg" alt="Actividad ganadera">
+
+  <img src="foto4.jpg" alt="Trabajo de campo">
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+  <h2>Progreso de la Actividad</h2>
+
+  <p>
+    Durante el desarrollo del proyecto se realizaron visitas técnicas a fincas ganaderas,
+    evaluación del estado sanitario de los animales, identificación de necesidades productivas
+    y diseño de propuestas de mejoramiento para los productores.
+  </p>
+
+  <br>
+
+  <p>
+    También se efectuaron actividades de observación, análisis de manejo animal y aplicación
+    de conocimientos adquiridos en medicina veterinaria y producción pecuaria.
   </p>
 
 </div>
 
+</section>
+
+<footer>
+  <p>Consultoría Veterinaria Ganadera - Proyecto Universitario</p>
+</footer>
+
 </body>
 </html>
+```
+
+---
+
+# Cómo subir las imágenes
+
+## Paso 1
+
+En GitHub:
+
+Código → Agregar archivo → Cargar archivos
+
+---
+
+## Paso 2
+
+Sube tus imágenes.
+
+Ejemplos:
+
+* foto1.jpg
+* foto2.jpg
+* foto3.jpg
+* foto4.jpg
+
+---
+
+## Paso 3
+
+No cambies esos nombres en el código o cambia el código por los nombres reales.
+
+Ejemplo:
+
+```html
+<img src="mifoto.jpg">
+```
+
+---
