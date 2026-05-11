@@ -1,124 +1,143 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Consultoría Veterinaria Ganadera</title>
+
+<title>Consultoria en Vacas</title>
 
 <style>
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-  font-family:Arial, sans-serif;
-  background:#f4f4f4;
-  color:#333;
-  line-height:1.6;
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+    color:#333;
+    line-height:1.6;
 }
 
 header{
-  background:#1f5f3b;
-  color:white;
-  text-align:center;
-  padding:60px 20px;
+    background:#14532d;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
 }
 
 header h1{
-  font-size:50px;
+    font-size:55px;
 }
 
 header p{
-  margin-top:15px;
-  font-size:20px;
+    margin-top:15px;
+    font-size:22px;
 }
 
 nav{
-  background:#144228;
-  padding:15px;
-  text-align:center;
+    background:#0f3d21;
+    padding:18px;
+    text-align:center;
+    position:sticky;
+    top:0;
 }
 
 nav a{
-  color:white;
-  text-decoration:none;
-  margin:0 15px;
-  font-weight:bold;
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
 }
 
 nav a:hover{
-  color:#d4ffd4;
+    color:#90ee90;
 }
 
 section{
-  padding:50px 10%;
-}
-
-h2{
-  color:#1f5f3b;
-  margin-bottom:20px;
-  font-size:35px;
+    padding:60px 10%;
 }
 
 .card{
-  background:white;
-  padding:30px;
-  border-radius:20px;
-  margin-bottom:30px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    margin-bottom:40px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
-  gap:20px;
+h2{
+    color:#14532d;
+    margin-bottom:20px;
+    font-size:38px;
 }
 
-.paquete{
-  background:white;
-  padding:25px;
-  border-radius:20px;
-  text-align:center;
-  box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-.paquete h3{
-  color:#1f5f3b;
-  margin-bottom:15px;
-}
-
-.precio{
-  font-size:35px;
-  color:#0a7a39;
-  margin:15px 0;
-  font-weight:bold;
+h3{
+    color:#14532d;
+    margin-bottom:15px;
 }
 
 img{
-  width:100%;
-  border-radius:15px;
+    width:100%;
+    border-radius:20px;
+    margin-top:25px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:25px;
+}
+
+.plan{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.plan h3{
+    font-size:28px;
+}
+
+.precio{
+    font-size:28px;
+    color:#0b7a36;
+    margin:15px 0;
+    font-weight:bold;
+}
+
+.boton{
+    display:inline-block;
+    margin-top:20px;
+    background:#14532d;
+    color:white;
+    padding:12px 20px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.boton:hover{
+    background:#0b7a36;
 }
 
 .galeria{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
-  gap:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+    gap:20px;
 }
 
 footer{
-  background:#1f5f3b;
-  color:white;
-  text-align:center;
-  padding:30px;
-  margin-top:40px;
-}
-
-ul{
-  margin-left:20px;
+    background:#14532d;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:40px;
 }
 
 </style>
@@ -127,153 +146,39 @@ ul{
 <body>
 
 <header>
-  <h1>Consultoría Veterinaria Ganadera</h1>
-  <p>Asesoría integral para el bienestar y productividad bovina</p>
+
+<h1>Consultoria en Vacas</h1>
+
+<p>
+Consultoría veterinaria especializada en sistemas bovinos de doble propósito
+</p>
+
 </header>
 
 <nav>
-  <a href="#nosotros">Nosotros</a>
-  <a href="#mision">Misión</a>
-  <a href="#vision">Visión</a>
-  <a href="#servicios">Servicios</a>
-  <a href="#equipo">Equipo</a>
-  <a href="#galeria">Galería</a>
+
+<a href="#nosotros">Quiénes Somos</a>
+<a href="#mision">Misión</a>
+<a href="#vision">Visión</a>
+<a href="#equipo">Equipo</a>
+<a href="#planes">Planes</a>
+<a href="#visitas">Visitas</a>
+<a href="#progreso">Progreso</a>
+<a href="#contacto">Contacto</a>
+
 </nav>
 
 <section id="nosotros">
 
 <div class="card">
-  <h2>¿Quiénes Somos?</h2>
 
-  <p>
-    Somos una empresa de consultoría veterinaria enfocada en el sector ganadero.
-    Brindamos acompañamiento técnico y profesional a fincas y productores bovinos,
-    con el objetivo de mejorar la salud animal, la productividad y el manejo integral del ganado.
-  </p>
-</div>
+<h2>Quiénes Somos</h2>
 
-</section>
+<img src="Foto1.png">
 
-<section id="mision">
-
-<div class="card">
-  <h2>Misión</h2>
-
-  <p>
-    Proporcionar asesoría veterinaria especializada al sector ganadero mediante estrategias técnicas,
-    innovadoras y sostenibles que permitan optimizar la producción y garantizar el bienestar animal.
-  </p>
-</div>
-
-</section>
-
-<section id="vision">
-
-<div class="card">
-  <h2>Visión</h2>
-
-  <p>
-    Ser una empresa líder en consultoría veterinaria ganadera reconocida por su excelencia profesional,
-    compromiso con el campo y aporte al desarrollo sostenible del sector pecuario.
-  </p>
-</div>
-
-</section>
-
-<section id="servicios">
-
-<h2>Paquetes de Asesoría</h2>
-
-<div class="grid">
-
-<div class="paquete">
-  <h3>Plan Básico</h3>
-
-  <p class="precio">$300.000</p>
-
-  <ul>
-    <li>Visita técnica mensual</li>
-    <li>Evaluación sanitaria</li>
-    <li>Recomendaciones básicas</li>
-  </ul>
-</div>
-
-<div class="paquete">
-  <h3>Plan Profesional</h3>
-
-  <p class="precio">$650.000</p>
-
-  <ul>
-    <li>2 visitas mensuales</li>
-    <li>Control nutricional</li>
-    <li>Seguimiento veterinario</li>
-    <li>Capacitación al personal</li>
-  </ul>
-</div>
-
-<div class="paquete">
-  <h3>Plan Premium</h3>
-
-  <p class="precio">$1.200.000</p>
-
-  <ul>
-    <li>Asistencia integral</li>
-    <li>Monitoreo constante</li>
-    <li>Plan sanitario completo</li>
-    <li>Diagnóstico productivo</li>
-  </ul>
-</div>
-
-</div>
-
-</section>
-
-<section id="equipo">
-
-<div class="card">
-  <h2>Nuestro Equipo</h2>
-
-  <div class="grid">
-
-    <div>
-      <h3>Gerente General</h3>
-      <p>Encargado de la dirección y toma de decisiones estratégicas.</p>
-    </div>
-
-    <div>
-      <h3>Médico Veterinario</h3>
-      <p>Responsable del diagnóstico, tratamiento y bienestar animal.</p>
-    </div>
-
-    <div>
-      <h3>Coordinador de Campo</h3>
-      <p>Supervisa las visitas técnicas y el manejo operativo.</p>
-    </div>
-
-    <div>
-      <h3>Asistente Administrativo</h3>
-      <p>Gestiona documentación, agenda y atención al cliente.</p>
-    </div>
-
-  </div>
-
-</div>
-
-</section>
-
-<section id="galeria">
-
-<h2>Galería de Visitas y Actividades</h2>
-
-<div class="galeria">
-
-  <img src="foto1.jpg" alt="Visita a finca">
-
-  <img src="foto2.jpg" alt="Revisión veterinaria">
-
-  <img src="foto3.jpg" alt="Actividad ganadera">
-
-  <img src="foto4.jpg" alt="Trabajo de campo">
+<p>
+¡Impulsando la Excelencia Ganadera, Bovidata Solutions es una firma de consultoría veterinaria profesional especializada en optimizar sistemas bovinos de doble propósito (leche y carne). Nuestro enfoque integral abarca todos los aspectos clave de la producción.
+</p>
 
 </div>
 
@@ -282,66 +187,259 @@ ul{
 <section>
 
 <div class="card">
-  <h2>Progreso de la Actividad</h2>
 
-  <p>
-    Durante el desarrollo del proyecto se realizaron visitas técnicas a fincas ganaderas,
-    evaluación del estado sanitario de los animales, identificación de necesidades productivas
-    y diseño de propuestas de mejoramiento para los productores.
-  </p>
+<h2>Análisis Integral de Subsistemas Ganaderos</h2>
 
-  <br>
+<p>
+Nutrición, Alimentación, Población, Reproducción, Producción, Salud y Economía.
+</p>
 
-  <p>
-    También se efectuaron actividades de observación, análisis de manejo animal y aplicación
-    de conocimientos adquiridos en medicina veterinaria y producción pecuaria.
-  </p>
+<img src="Analisis.png">
+
+</div>
+
+</section>
+
+<section id="mision">
+
+<div class="card">
+
+<h2>Misión</h2>
+
+<p>
+Brindar asesoria profesional e integral en sistemas de produccion bovina de doble propósito mediante la recopilacion y análisis de informacion. Nos comprometemos a optimizar la toma de decisiones y potenciar la rentabilidad ganadera de nuestros clientes.
+</p>
+
+</div>
+
+</section>
+
+<section id="vision">
+
+<div class="card">
+
+<h2>Visión</h2>
+
+<p>
+Visionado para el segundo semestre del 2028, proyectamos ser una empresa referente en consultoría veterinaria, reconocida por su gestión de datos, análisis técnico y mejora continua en sistemas bovinos de doble propósito.
+</p>
+
+</div>
+
+</section>
+
+<section id="equipo">
+
+<div class="card">
+
+<h2>Equipo de Trabajo</h2>
+
+<img src="Equipo.png">
+
+<div class="grid">
+
+<div>
+<h3>Integrante 1</h3>
+<p>Información del integrante.</p>
+</div>
+
+<div>
+<h3>Integrante 2</h3>
+<p>Información del integrante.</p>
+</div>
+
+<div>
+<h3>Integrante 3</h3>
+<p>Información del integrante.</p>
+</div>
+
+<div>
+<h3>Integrante 4</h3>
+<p>Información del integrante.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="planes">
+
+<h2>Planes y Servicios</h2>
+
+<div class="grid">
+
+<div class="plan">
+
+<h3>PREMIUM REPRO</h3>
+
+<p>
+Subsistemas: Nutrición + Reproducción
+</p>
+
+<p class="precio">
+Desde $1.200.000 COP/mes
+</p>
+
+<p>
+Valor ajustado según las necesidades y características de la finca y del hato.
+</p>
+
+<a href="#contacto" class="boton">
+Si deseas más información sobre este plan y sus beneficios, contáctanos
+</a>
+
+</div>
+
+<div class="plan">
+
+<h3>PREMIUM HEALTH</h3>
+
+<p>
+Subsistemas: Salud + Producción
+</p>
+
+<p class="precio">
+Desde $1.500.000 COP/mes
+</p>
+
+<p>
+Valor ajustado según las necesidades y características de la finca y del hato.
+</p>
+
+<a href="#contacto" class="boton">
+Si deseas más información sobre este plan y sus beneficios, contáctanos
+</a>
+
+</div>
+
+<div class="plan">
+
+<h3>PREMIUM INTEGRAL</h3>
+
+<p>
+Subsistemas: Producción + Nutrición + Reproducción
+</p>
+
+<p class="precio">
+Desde $2.500.000 COP/mes
+</p>
+
+<p>
+Valor ajustado según las necesidades y características de la finca y del hato.
+</p>
+
+<a href="#contacto" class="boton">
+Si deseas más información sobre este plan y sus beneficios, contáctanos
+</a>
+
+</div>
+
+<div class="plan">
+
+<h3>PREMIUM ELITE 360</h3>
+
+<p>
+Subsistemas: Nutrición, alimentación, población, reproducción, producción, salud y economía.
+</p>
+
+<p class="precio">
+Desde $4.000.000 COP/mes
+</p>
+
+<p>
+Planes semestrales y anuales personalizados.
+</p>
+
+<p>
+Valor ajustado según las necesidades y características de la finca y del hato.
+</p>
+
+<a href="#contacto" class="boton">
+Si deseas más información sobre este plan y sus beneficios, contáctanos
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="visitas">
+
+<h2>Visitas y Actividades</h2>
+
+<div class="galeria">
+
+<img src="Equipo1.png">
+<img src="Equipo2.png">
+<img src="Equipo3.png">
+<img src="Equipo4.png">
+<img src="Equipo5.png">
+<img src="Equipo6.png">
+<img src="Equipo7.png">
+<img src="Equipo8.png">
+<img src="Equipo9.png">
+<img src="Equipo10.png">
+<img src="Equipo11.png">
+<img src="Equipo12.png">
+<img src="Equipo13.png">
+<img src="Equipo14.png">
+<img src="Equipo15.png">
+
+</div>
+
+</section>
+
+<section id="progreso">
+
+<div class="card">
+
+<h2>Nuestro Progreso</h2>
+
+<p>
+Durante el desarrollo del proyecto se realizaron visitas técnicas a fincas ganaderas, evaluación del estado sanitario de los animales, identificación de necesidades productivas y diseño de propuestas de mejoramiento para los productores. También se efectuaron actividades de observación, análisis de manejo animal y aplicación de conocimientos adquiridos en medicina veterinaria y producción pecuaria.
+</p>
+
+</div>
+
+</section>
+
+<section id="contacto">
+
+<div class="card">
+
+<h2>Contáctanos</h2>
+
+<p>
+<strong>Contacto:</strong> Danna Sofia Osorio Vargas
+</p>
+
+<br>
+
+<p>
+<strong>Teléfono:</strong> +57 3008091409
+</p>
+
+<br>
+
+<p>
+<strong>Correo:</strong> dannasofiaov30@gmail.com
+</p>
 
 </div>
 
 </section>
 
 <footer>
-  <p>Consultoría Veterinaria Ganadera - Proyecto Universitario</p>
+
+<p>
+Consultoria en Vacas © 2026
+</p>
+
 </footer>
 
 </body>
 </html>
 ```
-
----
-
-# Cómo subir las imágenes
-
-## Paso 1
-
-En GitHub:
-
-Código → Agregar archivo → Cargar archivos
-
----
-
-## Paso 2
-
-Sube tus imágenes.
-
-Ejemplos:
-
-* foto1.jpg
-* foto2.jpg
-* foto3.jpg
-* foto4.jpg
-
----
-
-## Paso 3
-
-No cambies esos nombres en el código o cambia el código por los nombres reales.
-
-Ejemplo:
-
-```html
-<img src="mifoto.jpg">
-```
-
----
